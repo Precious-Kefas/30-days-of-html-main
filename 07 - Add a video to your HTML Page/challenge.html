@@ -2,6 +2,19 @@
 <html>
   <head>
     <title>07 - Add a video to your HTML Page</title>
+    <style>
+      h2 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+      video {
+        width: 500px;
+        height: 80vh;
+        position: relative;
+        left: 50rem;
+      }
+    </style>
   </head>
   <body>
     <!-- Find a video file in a format supported by HTML5, such as .mp4, .webm, or .ogg.  -->
@@ -11,5 +24,14 @@
     <!-- Add a poster attribute to the video tag and set it to an image file that will be used as the video's poster image.  -->
     <!-- Add controls attribute to the video tag to show the video controls.  -->
     <!-- Add text between the opening and closing video tags that will be displayed if the video cannot be played. -->
+
+    <h1>My HTML video</h1>
+
+    <main>
+      <h2>Miram Mekaba singing in Xhosa</h2>
+      <video src="./vid.mp4" poster="./img-vio.jpg" controls>
+        Video of Miriam Makeba singing in Xhosa
+      </video>
+    </main>
   </body>
 </html>
