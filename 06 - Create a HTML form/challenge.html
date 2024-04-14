@@ -2,6 +2,22 @@
 <html>
   <head>
     <title>06 - Create a HTML form</title>
+    <style>
+      body {
+        margin: 0 auto;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:50vh;
+      }
+      input {
+        padding: 9px;
+        
+      }
+    </style>
   </head>
   <body>
     <!-- Add a form tag to your HTML page.  -->
@@ -14,5 +30,48 @@
     <!-- Add text between the opening and closing button tags that will be displayed on the button. -->
 
     <!-- READUP: HTML forms https://blog.codeskills.dev/html-forms -->
+
+    <main>
+      <h1>My Basic HTML form</h1>
+      <form>
+        <div>
+          <label for=" name">First Name:</label><br />
+          <input type="text" name="user_first_name" id="user_first_name" />
+        </div>
+
+        <div>
+          <label for="user_last_name">Last Name: </label><br />
+          <input type="text" name="user_last_name" id="user_last_name" />
+        </div>
+
+        <div>
+          <label for="user_email">Email:</label><br />
+          <input type="email" id="user_email" name="user_email" />
+        </div>
+
+        <div>
+          <label for="user_password">Password:</label><br />
+          <input
+            type="password"
+            name="user_password"
+            required
+            id="user_password"
+          />
+        </div>
+
+        <div>
+          <label for="user_confirm_password"> Confirm Password:</label><br />
+          <input
+            type="password"
+            name="user_confirm_password"
+            required
+            id="user_confirm_password"
+          />
+        </div>
+        <br />
+
+        <div><button type="submit">Submit</button></div>
+      </form>
+    </main>
   </body>
 </html>
