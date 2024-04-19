@@ -3,7 +3,18 @@
   <head>
     <title>19 - Create a basic HTML form with a dropdown menu</title>
   </head>
-  <body>
+  <body style="background-color: azure;">
     <!-- Create an HTML form that allows users to select one option from a dropdown menu. -->
+    <form>
+      <label for="dropdown">Age</label>
+      <select id="dropdown" name="dropdown">
+        <option value="option1" >18-30</option>
+        <option value="option2" selected>31-50</option>
+        <option value="option3">51-70</option>
+        <option value="option3">71-120</option>
+      </select>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
