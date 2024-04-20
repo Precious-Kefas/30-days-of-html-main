@@ -2,10 +2,24 @@
 <html>
   <head>
     <title>22 - Add a fieldset and legend to your HTML form</title>
+    <style>
+      body {
+        margin: 0 auto;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:50vh;
+      }
+    </style>
   </head>
   <body>
     <!-- Add a fieldset and legend to your HTML form for all the contact information. -->
     <form>
+      <fieldset>
+        <legend>Contact Information</legend>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" />
       <br />
@@ -14,6 +28,7 @@
       <br />
       <label for="phone">Phone:</label>
       <input type="tel" id="phone" name="phone" />
+      </fieldset>
     </form>
   </body>
 </html>
